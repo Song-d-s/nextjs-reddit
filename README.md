@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Reddit Clone
 
-## Getting Started
+## Technical Stacks
 
-First, run the development server:
+- Next.js
+- Firebase v9
+- Chakra UI
+- TypeScript
+- Recoil
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- chakra-ui icons
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+  > `npm i @chakra-ui/icons`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- react-firebase-hooks
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  > `npm i react-firebase-hooks`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- react-icons
 
-## Learn More
+  > `npm i react-icons`
 
-To learn more about Next.js, take a look at the following resources:
+- safe-json-stringfy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  > `npm i safe-json-stringify` > `npm i --save-dev @types/safe-json-stringify`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- moment.js
+  > `npm i moment`
 
-## Deploy on Vercel
+## Docs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [chakra-ui icon](https://chakra-ui.com/docs/components/icon)
+- [chakra-ui modal](https://chakra-ui.com/docs/components/modal)
+- [react-firebase-hooks](https://github.com/CSFrequency/react-firebase-hooks)
+- [recoil atoms](https://recoiljs.org/docs/basic-tutorial/atoms/)
+- [youtube lecture](https://www.youtube.com/watch?v=zhx9FUSuAsM&list=PLu3PzwcGv6t7Xygj1GLM5DMKihUG2a92Y)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+### Memo
+
+- start dev server: `npm run dev`
+
+- recommended extension: React Typescript Snippets
+
+| Command | Description                                                |
+| ------- | ---------------------------------------------------------- |
+| `tfcd`  | Function Component base with Typescript and default export |
+| `tfcp`  | Function Component base with Typescript                    |
+| `etfc`  | Function Component base with Typescript and named export   |
+| `imr`   | Imports React                                              |
+| `sc`    | Imports Styled Components                                  |
+
+- VSCode shortcuts
+
+| Shortcut       | Description                      |
+| -------------- | -------------------------------- |
+| `Ctrl+Shift+P` | Command palette > Organize input |
+| `Ctrl+P`       | Search files by name             |
+| `Ctrl+.`       | Auto imports                     |
+| `Ctrl+Space`   | Show available options           |
+
+- further study
+  > - useRecoilValue, useRecoilState
+  > - transaction, batch
