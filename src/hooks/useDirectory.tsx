@@ -4,7 +4,7 @@ import {
   directoryMenuState,
 } from "@/atoms/directoryMenuAtom";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import { FaReddit } from "react-icons/fa";
 import { useRecoilState, useRecoilValue } from "recoil";
 
@@ -33,6 +33,11 @@ const useDirectory = () => {
   };
 
   useEffect(() => {
+    // check it is home
+    if (!Object.keys(router.query).length) {
+      return;
+    }
+
     const { currentCommunity } = communityStateValue;
     if (currentCommunity) {
       setDirectoryState((prev) => ({
@@ -46,7 +51,7 @@ const useDirectory = () => {
         },
       }));
     }
-  }, [communityStateValue, setDirectoryState]);
+  }, [communityStateValue, setDirectoryState, router.query]);
 
   return { directoryState, toggleMenuOpen, onSelectMenuItem };
 };

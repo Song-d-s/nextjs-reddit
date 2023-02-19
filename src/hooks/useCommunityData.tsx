@@ -59,7 +59,7 @@ const useCommunityData = () => {
         mySnippets: snippets as communitySnippet[],
         snippetsFetched: true,
       }));
-      console.log("here are snippets", snippets);
+      // console.log("here are snippets", snippets);
     } catch (error: any) {
       console.log("getMySnippets error", error);
       setError(error.message);
